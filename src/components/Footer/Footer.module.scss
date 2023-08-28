@@ -1,0 +1,36 @@
+.footer {
+    background-color: #134B80;
+}
+
+.footer_menu {
+    padding-top: 60px;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact_info_links {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 200px;
+}
+
+
+.contact_link {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'CenturyGothic';
+    color: #FFF;
+    margin-right: 30px;
+}
+
+.copyright {
+    font-family: 'CenturyGothic';
+    color: #FFF;
+    font-size: 16px;
+}
