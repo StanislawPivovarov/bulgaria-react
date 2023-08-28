@@ -28,7 +28,7 @@ const Header = () => {
                                     </a>
                                 </li>
                                 <li className={style.contact_li}>
-                                    <a className={style.contact_link} href="#">
+                                    <a className={style.contact_link} href="/#">
                                         <FaMapMarkerAlt style={{ marginRight: 10 }} />
                                         г. Казань, Оренбургский тракт д.20
                                     </a>
