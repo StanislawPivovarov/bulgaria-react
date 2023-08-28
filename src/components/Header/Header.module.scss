@@ -1,0 +1,35 @@
+.header {
+    height: 216px;
+    background-color: #fff;
+}
+
+.logo {
+    width: 500px;
+    height: auto;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    height: 100%;
+}
+
+.contact_ul {
+    text-align: end;
+    list-style-type: none;
+}
+
+.contact_link {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'CenturyGothic Bold';
+    color: #134B80;
+}
+
+.contact_li {
+    margin-bottom: 15px;
+}
