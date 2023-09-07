@@ -12,19 +12,19 @@ const root = ReactDOM.createRoot(
 root.render(
 
   <React.StrictMode>
-      <ConfigProvider
-    theme={{
-      token: {
-        borderRadius: 0,
-      },
-    }}
-  >
-        <StyleProvider>
-      <Layout>
-        <App />
-      </Layout>
-    </StyleProvider>
-  </ConfigProvider>
+    <ConfigProvider
+      theme={{
+        token: {
+          borderRadius: 0,
+        },
+      }}
+    >
+      <StyleProvider>
+        <Layout>
+          <App />
+        </Layout>
+      </StyleProvider>
+    </ConfigProvider>
 
   </React.StrictMode>
 );

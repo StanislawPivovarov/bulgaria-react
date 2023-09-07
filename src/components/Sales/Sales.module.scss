@@ -1,0 +1,13 @@
+.content {
+    height: 547px;
+    width: 100%;
+    color: '#fff';
+    text-align: center;
+    line-height: 160px;
+    text-align: center;
+    background-color: yellow;
+    margin: 0;
+    @media(min-width: 992px) {
+        height: 760px;
+    }
+}

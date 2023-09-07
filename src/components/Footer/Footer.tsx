@@ -11,18 +11,9 @@ const Footer = () => {
             <Row justify={'center'}>
                 <Col xs={23} lg={20}>
                     <div className={style.footer_menu}>
-                        <p>napolnenie</p>
-                        <p>napolnenie</p>
-                        <p>napolnenie</p>
-                        <p>napolnenie</p>
-                        <p>napolnenie</p>
-                        <p>napolnenie</p>
-                        <p>napolnenie</p>
-                        <p>napolnenie</p>
-                        <p>napolnenie</p>
-                        <p>napolnenie</p>
+                        
                     </div>
-                    <Divider style={{ margin: "30px 0px", backgroundColor: "#fff" }} />
+                    <Divider className={style.divider} />
                     <div className={style.contact_info}>
                         <div className={style.contact_info_links} >
                             <a className={style.contact_link} href="tel:88432777633">
@@ -38,8 +29,8 @@ const Footer = () => {
                                 г. Казань, Оренбургский тракт д.20
                             </a>
                         </div>
-                        
-                            <p className={style.copyright}>Графика Булгария © 2010 - 2023</p>
+
+                        <p className={style.copyright}>Графика Булгария © 2010 - 2023</p>
                     </div>
                 </Col>
             </Row>

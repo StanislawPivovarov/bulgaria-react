@@ -1,18 +1,23 @@
 import React from "react";
 import style from './Header.module.scss'
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 import logo from '../../assets/logo.svg'
 import { AiFillPhone } from 'react-icons/ai'
 import { MdEmail } from 'react-icons/md'
 import { FaMapMarkerAlt } from 'react-icons/fa'
+import { MenuOutlined } from "@ant-design/icons";
 
 const Header = () => {
     return (
         <div className={style.header}>
             <Row style={{ height: "100%" }} justify={'center'}>
-                <Col xs={23} lg={20}>
+                <Col xs={22} lg={20}>
                     <div className={style.header_content}>
-                        <img className={style.logo} src={logo} alt="logo" />
+                        <div className={style.logo_content}>
+                            <img className={style.logo} src={logo} alt="logo" />
+                            <Button type="link" className={style.menu_button}><MenuOutlined style={{fontSize: 20}}/></Button>
+                        </div>
+
                         <div>
                             <ul className={style.contact_ul}>
                                 <li className={style.contact_li}>
