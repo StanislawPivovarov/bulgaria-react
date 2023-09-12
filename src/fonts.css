@@ -51,3 +51,9 @@
     src: url("./assets/fonts/CenturyGothic/CenturyGothic.woff") format("woff");
     font-weight: normal;
 }
+
+@font-face {
+    font-family: "VeryBerry";
+    src: url("./assets/fonts/VeryBerryPro-Regular.woff") format("woff");
+    font-weight: normal;
+}

@@ -1,0 +1,23 @@
+.back {
+    width: 100%;
+    background: linear-gradient(180deg, #EBF6FB 0%, #C1E5FA 100%);
+}
+
+.header {
+    font-family: Bebas Neue Regular, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 64px;
+    margin-bottom: 16px;
+    color: #244360;
+    text-align: center;
+}
+
+.button_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}

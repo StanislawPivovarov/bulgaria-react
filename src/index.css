@@ -18,3 +18,14 @@ p {
   margin: 0;
 }
 
+.ant-float-btn-body {
+  background-color: #EE771C !important;
+}
+
+.ant-float-btn-icon {
+  color: #fff !important;
+}
+
+body {
+  width: 100vw;
+}
