@@ -1,4 +1,5 @@
 import style from './Label.module.scss'
+import badge from '../../assets/Label.svg'
 
 interface Props {
     class: string
@@ -6,12 +7,7 @@ interface Props {
 
 const Label = (props: Props ) => {
     return(
-        <div className={style.label_wrapper && props.class}>
-        <div className={style.label}>
-            <h1 className={style.text} style={{textAlign: 'center'}}>АКЦИЯ</h1>
-        </div>
-        </div>
-
+            <img className={style.label_wrapper && props.class} src={badge} alt="alt" />
     )
 }
 

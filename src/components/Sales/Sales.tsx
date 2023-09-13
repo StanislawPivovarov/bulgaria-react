@@ -21,13 +21,18 @@ const Sales = () => {
 
                                     <div className={style.content_text}>
                                         <h1 className={style.header_text}>Печать визиток
-                                            по 1.10₽</h1>
-                                        <Label class={style.label} />
+                                            по 1.10₽ <Label class={style.label} /></h1>
+                                        
+                                        <div className={style.button_description}>
+                                        <p className={style.description}>Двухсторонняя цветная печать на плотной мелованной бумаге</p>
+                                        <Button className={style.order_btn} type="primary">Заказать <RightOutlined className={style.btn_logo}/></Button>
+                                        </div>
+                                       
                                     </div>
-                                    <p className={style.description}>Двухсторонняя цветная печать на плотной мелованной бумаге</p>
+                                    
                                 </div>
                                 <div className={style.button_group}>
-                                <Button className={style.order_btn} type="primary">Заказать <RightOutlined className={style.btn_logo}/></Button>
+                               
                                 <Button className={style.more_sales} type="default">Все акции <RightOutlined className={style.more_sales_logo}/></Button>
 
                                 </div>

@@ -14,6 +14,9 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    @media (min-width: 992px) {
+        font-size: 56px;
+    }
 }
 
 .carousel {
@@ -24,13 +27,21 @@
 }
 
 .carousel img {
-    animation: slide 5s infinite linear;
+    animation: slide 5000ms infinite linear;
+    animation-iteration-count: infinite;
 }
 
 .image {
     width: 240px;
     height: 240px;
     object-fit: cover;
+    animation: ease-in-out 0.5s;
+    transition: scale 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.image:hover {
+    scale: 1.1;
 }
 
 .portfolio_link {
@@ -43,6 +54,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media (min-width: 992px) {
+        font-size: 20px;
+        margin-top: 40px;
+    }
 }
 
 @keyframes slide {
@@ -53,4 +68,13 @@
     100% {
         transform: translate(-160%, 0);
     }
+}
+
+.image_container {
+    overflow: hidden;
+    height: 240px;
+}
+
+.marquee {
+    overflow: hidden;
 }
