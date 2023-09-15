@@ -1,7 +1,7 @@
 import React from "react";
 import style from './Partners.module.scss'
 import { Col, Row } from "antd";
-import test from '../../assets/test_partners.png'
+import test from '../../../assets/test_partners.png'
 
 const Partners = () => {
     return(

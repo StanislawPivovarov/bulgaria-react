@@ -2,9 +2,9 @@ import React from "react";
 import { Button, Carousel, Col, Row } from "antd";
 
 import style from './Sales.module.scss'
-import back from '../../assets/back.png'
+import back from '../../../assets/back.png'
 import Label from "../Label";
-import card from '../../assets/Визитки.png'
+import card from '../../../assets/Визитки.png'
 import { RightOutlined } from "@ant-design/icons";
 
 const Sales = () => {
@@ -21,8 +21,8 @@ const Sales = () => {
 
                                     <div className={style.content_text}>
                                         <h1 className={style.header_text}>Печать визиток
-                                            по 1.10₽ <Label class={style.label} /></h1>
-                                        
+                                            по 1.10₽ </h1>
+                                            <Label class={style.label} />
                                         <div className={style.button_description}>
                                         <p className={style.description}>Двухсторонняя цветная печать на плотной мелованной бумаге</p>
                                         <Button className={style.order_btn} type="primary">Заказать <RightOutlined className={style.btn_logo}/></Button>

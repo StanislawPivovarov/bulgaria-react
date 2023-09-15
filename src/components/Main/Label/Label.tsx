@@ -1,5 +1,5 @@
 import style from './Label.module.scss'
-import badge from '../../assets/Label.svg'
+import badge from '../../../assets/Label.svg'
 
 interface Props {
     class: string

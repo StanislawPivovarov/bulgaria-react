@@ -1,6 +1,6 @@
 import React from "react";
-import top from '../../assets/review/top.svg'
-import bottom from '../../assets/review/bottom.svg'
+import top from '../../../assets/review/top.svg'
+import bottom from '../../../assets/review/bottom.svg'
 import style from './Review.module.scss'
 import {Rate } from "antd";
 

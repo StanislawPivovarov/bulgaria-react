@@ -5,6 +5,7 @@ import App from './App';
 import Layout from './components/Layout';
 import { StyleProvider } from '@ant-design/cssinjs'
 import { ConfigProvider } from 'antd';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,20 +13,23 @@ const root = ReactDOM.createRoot(
 root.render(
 
   <React.StrictMode>
-    <ConfigProvider
-      theme={{
-        token: {
-          borderRadius: 0,
-          colorPrimary: "#EE771C"
-        },
-      }}
-    >
-      <StyleProvider>
-        <Layout>
-          <App />
-        </Layout>
-      </StyleProvider>
-    </ConfigProvider>
+    <BrowserRouter>
+      <ConfigProvider
+        theme={{
+          token: {
+            borderRadius: 0,
+            colorPrimary: "#EE771C"
+          },
+        }}
+      >
+        <StyleProvider>
+          <Layout>
+            <App />
+          </Layout>
+        </StyleProvider>
+      </ConfigProvider>
+    </BrowserRouter>
+
 
   </React.StrictMode>
 );
