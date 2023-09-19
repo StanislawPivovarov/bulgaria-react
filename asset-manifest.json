@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bulgaria-react/static/css/main.1c9be61e.css",
-    "main.js": "/bulgaria-react/static/js/main.9b0d9991.js",
+    "main.js": "/bulgaria-react/static/js/main.0222e1af.js",
     "static/media/CardPic.jpeg": "/bulgaria-react/static/media/CardPic.29dee2cf8d368e4f3f32.jpeg",
     "static/media/test.jpeg": "/bulgaria-react/static/media/test.6f151c6c704a38450965.jpeg",
     "static/media/png": "/bulgaria-react/static/media/a91e749e34858057eb459fb78a09eef7.8343853ef85b193203c4.png",
@@ -26,10 +26,10 @@
     "static/media/bottom.svg": "/bulgaria-react/static/media/bottom.f5651aec4e9d1a17a6145790aee75f8d.svg",
     "static/media/top.svg": "/bulgaria-react/static/media/top.88274b25b907d51d56de0853530beccc.svg",
     "main.1c9be61e.css.map": "/bulgaria-react/static/css/main.1c9be61e.css.map",
-    "main.9b0d9991.js.map": "/bulgaria-react/static/js/main.9b0d9991.js.map"
+    "main.0222e1af.js.map": "/bulgaria-react/static/js/main.0222e1af.js.map"
   },
   "entrypoints": [
     "static/css/main.1c9be61e.css",
-    "static/js/main.9b0d9991.js"
+    "static/js/main.0222e1af.js"
   ]
 }
