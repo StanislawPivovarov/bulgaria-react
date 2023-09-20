@@ -8,34 +8,50 @@ const Menu = () => {
         {
           key: '1',
           label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-              1st menu item
+            <a className={style.links} href="/">
+              Главная
             </a>
           ),
         },
         {
           key: '2',
           label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-              2nd menu item (disabled)
+            <a className={style.links} href="/about">
+              О нас
             </a>
           ),
-          icon: <SmileOutlined />,
-          disabled: true,
         },
         {
           key: '3',
           label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-              3rd menu item (disabled)
+            <a className={style.links} href="/reviews">
+              Отзывы
             </a>
           ),
-          disabled: true,
         },
         {
           key: '4',
-          danger: true,
-          label: 'a danger item',
+          label: (
+            <a className={style.links} href="/contacts">
+              Контакты
+            </a>
+          ),
+        },
+        {
+          key: '5',
+          label: (
+            <a className={style.links} href="/sales">
+              Скидки
+            </a>
+          ),
+        },
+        {
+          key: '6',
+          label: (
+            <a className={style.links} href="/portfolio">
+              Портфолио
+            </a>
+          ),
         },
       ];
     return (

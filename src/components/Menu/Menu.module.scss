@@ -43,3 +43,18 @@
 .dropdown {
     font-size: 20px;
 }
+
+.links {
+    color: #244360;
+font-family: CenturyGothic;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 20px 0;
+@media (min-width: 992px) {
+    font-size: 14px;
+}
+@media(min-width: 1400px) {
+    font-size: 20px;
+}
+}

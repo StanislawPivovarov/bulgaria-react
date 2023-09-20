@@ -5,7 +5,7 @@ import App from './App';
 import Layout from './components/Layout';
 import { StyleProvider } from '@ant-design/cssinjs'
 import { ConfigProvider } from 'antd';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

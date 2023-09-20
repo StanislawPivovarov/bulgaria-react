@@ -9,22 +9,24 @@ import { Routes, Route } from 'react-router-dom';
 import Portfolio from './pages/Portfolio';
 import SalesPage from './pages/SalesPage';
 import ClientReviews from './pages/ClientReviews';
+import Contacts from './pages/Contacts';
+import About from './pages/About';
 
 
 function App() {
   return (
     <div className="App">
-
-
       <Routes>
         <Route path='/' element={[<Sales />,
         <ProductMenu />,
         <PortfolioMain />,
         <Partners />,
-        <Reviews />]} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path='/sales' element={<SalesPage />} />
-        <Route path='/reviews' element={<ClientReviews />} />
+        <Reviews />]}></Route>
+        <Route path="/portfolio" element={<Portfolio />}></Route>
+        <Route path='/sales' element={<SalesPage />}></Route>
+        <Route path='/reviews' element={<ClientReviews />}></Route>
+        <Route path='/contacts' element={<Contacts />}></Route>
+        <Route path='/about' element={<About />}></Route>
       </Routes>
     </div>
   );

@@ -23,6 +23,7 @@
     justify-content: space-between;
     margin-top: 8px;
     align-items: center;
+
     @media(min-width: 992px) {
         display: block;
     }
@@ -45,6 +46,7 @@
     text-align: center;
     list-style-type: none;
     padding: 0;
+
     @media(min-width: 992px) {
         text-align: end;
     }
@@ -72,4 +74,22 @@
     @media(min-width: 992px) {
         display: none;
     }
+}
+
+.drawer_content {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px 64px 32px;
+}
+
+.drawer_content button {
+    text-align: start;
+    color: #C1E5FA !important;
+    height: 48px;
+    font-family: CenturyGothic;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
 }
