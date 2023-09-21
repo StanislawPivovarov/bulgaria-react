@@ -11,6 +11,7 @@ import SalesPage from './pages/SalesPage';
 import ClientReviews from './pages/ClientReviews';
 import Contacts from './pages/Contacts';
 import About from './pages/About';
+import Directions from './pages/Directions';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path='/reviews' element={<ClientReviews />}></Route>
         <Route path='/contacts' element={<Contacts />}></Route>
         <Route path='/about' element={<About />}></Route>
+        <Route path='/direction' element={<Directions/>}></Route>
       </Routes>
     </div>
   );
