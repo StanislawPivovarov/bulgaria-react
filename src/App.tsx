@@ -12,6 +12,7 @@ import ClientReviews from './pages/ClientReviews';
 import Contacts from './pages/Contacts';
 import About from './pages/About';
 import Directions from './pages/Directions';
+import Product from './pages/Product';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path='/contacts' element={<Contacts />}></Route>
         <Route path='/about' element={<About />}></Route>
         <Route path='/direction' element={<Directions/>}></Route>
+        <Route path='/product' element={<Product/>}></Route>
       </Routes>
     </div>
   );

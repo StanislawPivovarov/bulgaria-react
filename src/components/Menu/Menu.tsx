@@ -1,7 +1,7 @@
 import React from "react";
 import style from './Menu.module.scss'
 import { Button, Col, Dropdown, MenuProps, Row } from "antd";
-import { MenuOutlined, SearchOutlined, SmileOutlined } from "@ant-design/icons";
+import { MenuOutlined, SearchOutlined } from "@ant-design/icons";
 
 const Menu = () => {
     const items: MenuProps['items'] = [
@@ -50,6 +50,22 @@ const Menu = () => {
           label: (
             <a className={style.links} href="/portfolio">
               Портфолио
+            </a>
+          ),
+        },
+        {
+          key: '7',
+          label: (
+            <a className={style.links} href="/direction">
+              Направление
+            </a>
+          ),
+        },
+        {
+          key: '8',
+          label: (
+            <a className={style.links} href="/product">
+              Продукт
             </a>
           ),
         },

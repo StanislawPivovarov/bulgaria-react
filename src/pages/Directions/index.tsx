@@ -11,7 +11,7 @@ import PortfolioCarousel from "../../components/PortfolioCarousel";
 const Directions = () => {
     return (
         <div className={style.back}>
-            <Row justify={'center'}>
+            <Row justify={'center'} style={{paddingBottom: 50}}>
                 <Col xs={24} lg={20}>
                     <div className={style.content}>
                         <h2 className={style.header}>печати и штампы</h2>
