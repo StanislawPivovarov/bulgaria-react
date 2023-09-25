@@ -56,3 +56,8 @@ body {
   background-color: #134B80 !important;
   padding: 0 !important;
 }
+
+.ant-modal-content {
+  padding: 0px !important;
+  padding-bottom: 40px !important;
+}
