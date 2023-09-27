@@ -5,6 +5,7 @@
 .footer_menu {
 
     display: none;
+
     @media(min-width: 992px) {
         display: block;
         padding-top: 60px;
@@ -16,6 +17,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 32px;
+
     @media(min-width: 992px) {
         flex-direction: row;
     }
@@ -24,6 +26,7 @@
 .contact_info_links {
     display: flex;
     flex-direction: column;
+
     @media(min-width: 992px) {
         flex-direction: row;
         padding-bottom: 200px;
@@ -55,6 +58,7 @@
     text-align: center;
     margin-top: 32px;
     margin-bottom: 32px;
+
     @media(min-width: 992px) {
         font-size: 16px;
         margin-top: 0;
@@ -70,4 +74,44 @@
     @media(min-width: 992px) {
         display: block;
     }
+}
+
+.bottom_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.col_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.directions {
+    color: #C1E5FA;
+font-family: CenturyGothic;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 22px;
+}
+
+.items {
+    color: #C1E5FA;
+font-family: CenturyGothic;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 25px;
+}
+
+.items:last-child {
+    margin-bottom: 0;
 }

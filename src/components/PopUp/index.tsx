@@ -3,21 +3,7 @@ import React, { useState } from "react";
 import test from '../../assets/popup/56d9edc0508af5327e71c157f85c3570.jpeg'
 import style from './PopUp.module.scss'
 
-const PopUp = () => {
-    const [isModalOpen, setIsModalOpen] = useState(true);
-
-    const showModal = () => {
-        setIsModalOpen(true);
-    };
-
-    const handleOk = () => {
-        setIsModalOpen(false);
-    };
-
-    const handleCancel = () => {
-        setIsModalOpen(false);
-    };
-
+const PopUp = (props:any) => {
     const width = window.innerWidth
     var close
     if (width > 992){
@@ -31,7 +17,7 @@ const PopUp = () => {
     return (
         <div>
             
-            <Modal centered className={style.popup} footer={false} open={isModalOpen} onOk={handleOk} closable={close} onCancel={handleCancel}>
+            <Modal centered className={style.popup} footer={false} open={props.open} onOk={props.onOk} closable={close} onCancel={props.onCancel}>
                 <img src={test} className={style.image} alt="" />
                 <div className={style.popup_content}>
                     <h1>Профессиональное создание каталога для TopShues</h1>

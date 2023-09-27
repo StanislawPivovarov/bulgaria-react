@@ -34,7 +34,6 @@ const PortfolioCarousel = (props: Props) => {
         <div className={style.image_container}>
             <img className={style.image} alt="" src={test} />
         </div>
-
     </Marquee>
     )
 }

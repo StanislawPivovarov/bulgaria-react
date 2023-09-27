@@ -1,6 +1,7 @@
 import React from "react";
 import style from './Portfolio.module.scss'
 import image from '../assets/CardPic.jpeg'
+import { Button } from "antd";
 
 const Portfolio = () => {
     return (
@@ -12,32 +13,60 @@ const Portfolio = () => {
             <div className="images">
                 <div className={style.first_line} >
                     <div className="big">
-                        <img src={image} className={style.img_big} alt="" />
+                        <Button type="link" className={style.image_container}>
+                            <img src={image} className={style.img_big} alt="" />
+                        </Button>
                     </div>
                     <div className={style.mini}>
                         <div className={style.first}>
-                            <img src={image} className={style.img_big} alt="" />
-                            <img src={image} className={style.img_big} alt="" />
+                            <div className={style.image_container}>
+                                <img src={image} className={style.img_big} alt="" />
+                            </div>
+                            <div className={style.image_container}>
+                                <img src={image} className={style.img_big} alt="" />
+                            </div>
+
                         </div>
                         <div className={style.first}>
-                            <img src={image} className={style.img_big} alt="" />
-                            <img src={image} className={style.img_big} alt="" />
+                            <div className={style.image_container}>
+                                <img src={image} className={style.img_big} alt="" />
+                            </div>
+                            <div className={style.image_container}>
+                                <img src={image} className={style.img_big} alt="" />
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
                 <div className={style.all_left}>
-                    <img src={image} className={style.img_big} alt="" />
-                    <img src={image} className={style.img_big} alt="" />
-                    <img src={image} className={style.img_big} alt="" />
-                    <img src={image} className={style.img_big} alt="" />
-                    <img src={image} className={style.img_big} alt="" />
-                    <img src={image} className={style.img_big} alt="" />
-                    <img src={image} className={style.img_big} alt="" />
-                    <img src={image} className={style.img_big} alt="" />
-                    <img src={image} className={style.img_big} alt="" />
-                    <img src={image} className={style.img_big} alt="" />
+                    <div className={style.image_container}>
+                        <img src={image} className={style.img_big} alt="" />
+                    </div>
+                    <div className={style.image_container}>
+                        <img src={image} className={style.img_big} alt="" />
+                    </div>
+                    <div className={style.image_container}>
+                        <img src={image} className={style.img_big} alt="" />
+                    </div>
+                    <div className={style.image_container}>
+                        <img src={image} className={style.img_big} alt="" />
+                    </div>
+                    <div className={style.image_container}>
+                        <img src={image} className={style.img_big} alt="" />
+                    </div>
+                    <div className={style.image_container}>
+                        <img src={image} className={style.img_big} alt="" />
+                    </div>
+                    <div className={style.image_container}>
+                        <img src={image} className={style.img_big} alt="" />
+                    </div>
+                    <div className={style.image_container}>
+                        <img src={image} className={style.img_big} alt="" />
+                    </div>
+                    <div className={style.image_container}>
+                        <img src={image} className={style.img_big} alt="" />
+                    </div>
                 </div>
             </div>
         </div>
