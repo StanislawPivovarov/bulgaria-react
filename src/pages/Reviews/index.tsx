@@ -1,8 +1,8 @@
 import React from "react";
-import back from '../assets/background/427d5d07b90ff63bded756568f027851.png'
+import back from '../../assets/background/427d5d07b90ff63bded756568f027851.png'
 import { Row, Col } from "antd";
 import style from './ClientReviews.module.scss'
-import Review from "../components/Main/Review";
+import Review from "../../components/Main/Review";
 
 const ClientReviews = () => {
     return (

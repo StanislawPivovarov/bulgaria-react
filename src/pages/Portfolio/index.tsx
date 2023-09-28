@@ -1,9 +1,12 @@
 import React from "react";
 import style from './Portfolio.module.scss'
-import image from '../assets/CardPic.jpeg'
+import image from '../../assets/CardPic.jpeg'
 import { Button } from "antd";
+import { useParams } from "react-router-dom";
 
 const Portfolio = () => {
+
+
     return (
         <div className={style.back}>
             <h2 className={style.header}>

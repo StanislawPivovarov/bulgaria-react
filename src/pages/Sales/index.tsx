@@ -1,8 +1,8 @@
 import React from "react";
 import style from './SalesPage.module.scss'
-import back from '../assets/background/427d5d07b90ff63bded756568f027851.png'
-import ProductCard from "../components/Main/ProductCard";
-import SalesCard from "../components/Sales/SalesCard";
+import back from '../../assets/background/427d5d07b90ff63bded756568f027851.png'
+import ProductCard from "../../components/Main/ProductCard";
+import SalesCard from "../../components/Sales/SalesCard";
 import { Row, Col } from "antd";
 
 const SalesPage = () => {

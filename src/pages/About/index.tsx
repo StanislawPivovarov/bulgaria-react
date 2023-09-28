@@ -1,9 +1,9 @@
 import { Row, Col } from "antd";
 import React from "react";
 import style from './About.module.scss'
-import logo from '../assets/logoBig.png'
-import Partners from "../components/Main/Partners";
-import PortfolioMain from "../components/Main/PortfolioMain";
+import logo from '../../assets/logoBig.png'
+import Partners from "../../components/Main/Partners";
+import PortfolioMain from "../../components/Main/PortfolioMain";
 
 const About = () => {
     return (

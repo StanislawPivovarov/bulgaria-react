@@ -2,7 +2,7 @@ import React from "react";
 import style from './ProductCard.module.scss'
 import image from '../../../assets/CardPic.jpeg'
 
-const ProductCard = () => {
+const ProductCard = (props:any) => {
     return (
         <div className={style.card}>
             <div className={style.image_content}>
@@ -10,8 +10,8 @@ const ProductCard = () => {
             </div>
 
             <div className={style.description}>
-                <h2 className={style.name}>Визитки</h2>
-                <p className={style.description_text}>Я в своем познании настолько преисполнился, что я как будто бы уже сто триллионов миллиардов лет проживаю на триллионах и ...</p>
+                <h2 className={style.name}>{props.name}</h2>
+                <p className={style.description_text}>{props.description}</p>
             </div>
         </div>
     )

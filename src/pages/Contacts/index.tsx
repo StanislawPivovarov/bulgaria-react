@@ -3,8 +3,8 @@ import style from './Contacts.module.scss'
 import { MdLocationOn } from "react-icons/md";
 import { AiFillMail, AiFillPhone } from "react-icons/ai";
 import { RiWhatsappFill } from 'react-icons/ri'
-import instagram from '../assets/contacts/instagram.svg'
-import vk from '../assets/contacts/vk.svg'
+import instagram from '../../assets/contacts/instagram.svg'
+import vk from '../../assets/contacts/vk.svg'
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 
 const Contacts = () => {
