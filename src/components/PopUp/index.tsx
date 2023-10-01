@@ -4,6 +4,7 @@ import test from '../../assets/popup/56d9edc0508af5327e71c157f85c3570.jpeg'
 import style from './PopUp.module.scss'
 
 const PopUp = (props:any) => {
+
     const width = window.innerWidth
     var close
     if (width > 992){

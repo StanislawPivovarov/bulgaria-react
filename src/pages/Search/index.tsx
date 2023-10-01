@@ -24,7 +24,7 @@ const Search = () => {
     <div className={style.back}>
       <Row justify={"center"}>
         <Col xs={23} lg={20}>
-        <h2>Результаты поиска</h2>
+        <h2 className={style.header}>Результаты поиска</h2>
     <SearchComponent dataFromApi={data}/>
         </Col>
       </Row>

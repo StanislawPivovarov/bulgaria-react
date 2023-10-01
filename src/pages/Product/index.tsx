@@ -1,5 +1,5 @@
 import { Row, Col, Table, Button } from "antd";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from './Product.module.scss'
 import product from '../../assets/product/Frame 34189.png'
 import PrimaryHeader from "../../components/PrimaryHeader";
@@ -9,70 +9,60 @@ import todat from '../../assets/product/todat.png'
 import ProductCard from "../../components/Main/ProductCard";
 import back from '../../assets/background/427d5d07b90ff63bded756568f027851.png'
 import ReactPlayer from 'react-player'
+import { useParams } from "react-router-dom";
+import getCategoriesByLink from "../../api/getGategoriesByLink/getGategoriesByLink";
+import getProductsByLink from "../../api/getProductsByLink/getProductsByLink";
+import Markdown from "react-markdown";
 
 
 const Product = () => {
-    const dataSource = [
-        {
-            key: '1',
-            name: 'Mike',
-            age: 32,
-            address: '10 Downing Street',
-        },
-        {
-            key: '2',
-            name: 'John',
-            age: 42,
-            address: '10 Downing Street',
-        },
-    ];
+    const [loading, setLoading] = useState(true);
+    const { id, slug }: any = useParams();
+    console.log(id)
+    console.log(slug)
 
-    const columns = [
-        {
-            title: 'Name',
-            dataIndex: 'name',
-            key: 'name',
-        },
-        {
-            title: 'Age',
-            dataIndex: 'age',
-            key: 'age',
-        },
-        {
-            title: 'Товар 1',
-            dataIndex: 'tov1',
-            key: 'tov1',
-        },
-        {
-            title: 'Товар 2',
-            dataIndex: 'tov1',
-            key: 'tov1',
-        },
-        {
-            title: 'Товар 3',
-            dataIndex: 'tov1',
-            key: 'tov1',
-        },
-        {
-            title: 'Товар 4',
-            dataIndex: 'tov1',
-            key: 'tov1',
-        },
-    ];
 
+    const [data, setData] = useState<any>(null);
+
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await getProductsByLink(slug);
+                setData(response.attributes);
+
+            } catch (error) {
+
+            }
+            finally {
+                setLoading(false); // Устанавливаем статус загрузки в false независимо от результата
+            }
+
+        };
+
+        fetchData();
+    }, [slug]);
+    console.log(data?.products)
+
+    if (loading) {
+        // Можете добавить здесь лоадер или другой компонент, который будет отображаться во время загрузки
+        return <div>Loading...</div>;
+    }
     return (
+
         <>
             <div className={style.back}>
                 <img src={back} className={style.back_img} alt="" />
                 <Row justify={'center'} style={{ paddingBottom: 50 }}>
                     <Col xs={24} lg={20}>
                         <div className={style.content}>
-                            <h2 className={style.header}>печати и штампы</h2>
+                            <h2 className={style.header}>{data.name}</h2>
                             <div className={style.head_content}>
                                 <img className={style.cover} src={product} alt="" />
                                 <div className={style.description}>
-                                    <p>Изготовление гербовой печати по ГОСТу</p>
-                                    <p>– сложная и трудоемкая задача. Для получения печати юридическим или физическим лицом, необходимо собрать определенный объем документов, а также предоставить письменое заявление о необходимости изготовления гербовой печати.</p>
+                                    <Markdown>
+                                        {data.description}
+                                    </Markdown>
                                 </div>
                             </div>
 
@@ -104,8 +94,6 @@ const Product = () => {
                                 </div>
                             </div>
 
-                            <PrimaryHeader className={style.blue_header} header="Ценовые ожидания" />
-                            <Table className={style.table} pagination={false} dataSource={dataSource} columns={columns} />
                             <PrimaryHeader className={style.blue_header} header="Преимущества" />
                             <h2>Добавить преимущества и сделать вертску для них</h2>
                             <PrimaryHeader className={style.blue_header} header="Особенности производства" />
@@ -113,7 +101,7 @@ const Product = () => {
                                 <div className={style.player}>
 
                                     <ReactPlayer
-                                        url={"https://www.youtube.com/watch?v=KsqNi87VVrE"}
+                                        url={data.video}
                                         width={"100%"}
                                         height={"100%"}
                                     />
@@ -128,26 +116,20 @@ const Product = () => {
 
                             <PrimaryHeader className={style.blue_header} header="Модели товара" />
                             <div className={style.product_contents}>
-                                <div className={style.product}>
-                                    <img src={todat} alt="" />
-                                    <p className={style.product_name}>Trodat Модель 1</p>
-                                    <p className={style.product_description}>Краткое описание что это. Преимущества данной модели. Кейсы в каких случаях выбирать эту модель.</p>
-                                </div>
-                                <div className={style.product}>
-                                    <img src={todat} alt="" />
-                                    <p className={style.product_name}>Trodat Модель 1</p>
-                                    <p className={style.product_description}>Краткое описание что это. Преимущества данной модели. Кейсы в каких случаях выбирать эту модель.</p>
-                                </div>
-                                <div className={style.product}>
-                                    <img src={todat} alt="" />
-                                    <p className={style.product_name}>Trodat Модель 1</p>
-                                    <p className={style.product_description}>Краткое описание что это. Преимущества данной модели. Кейсы в каких случаях выбирать эту модель.</p>
-                                </div>
-                                <div className={style.product}>
-                                    <img src={todat} alt="" />
-                                    <p className={style.product_name}>Trodat Модель 1</p>
-                                    <p className={style.product_description}>Краткое описание что это. Преимущества данной модели. Кейсы в каких случаях выбирать эту модель.</p>
-                                </div>
+
+                                {
+                                    data?.products.data.map((item: {
+                                        attributes: any; name: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; description: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined;
+                                    }) => (
+                                        <div className={style.product}>
+                                            <img src={todat} alt="" />
+                                            <p className={style.product_name}>{item.attributes.name}</p>
+                                            <p className={style.product_description}>{item.attributes.description}</p>
+
+                                        </div>
+                                    ))}
+
+
                             </div>
 
                             <div className={style.feedback}>
@@ -158,7 +140,7 @@ const Product = () => {
                                 <Button type="primary">Заказать звонок</Button>
                             </div>
 
-                            <h2 className={style.recommendations}>Возможно вас заинтересует</h2>
+                            {/* <h2 className={style.recommendations}>Возможно вас заинтересует</h2>
                             <div className={style.products}>
                                 <ProductCard />
                                 <ProductCard />
@@ -166,7 +148,7 @@ const Product = () => {
                                 <ProductCard />
                                 <ProductCard />
 
-                            </div>
+                            </div> */}
                         </div>
                     </Col>
                 </Row>
@@ -174,5 +156,6 @@ const Product = () => {
         </>
     )
 }
+
 
 export default Product;

@@ -26,16 +26,17 @@ function App() {
         <PortfolioMain />,
         <Partners />,
         <Reviews />]}></Route>
+        <Route path='/:id' element={<Directions />} />
+        <Route path='/:id/:slug' element={<Product />} />
         <Route path="/portfolio" element={<Portfolio />}></Route>
         <Route path='/sales' element={<SalesPage />}></Route>
         <Route path='/reviews' element={<ClientReviews />}></Route>
         <Route path='/contacts' element={<Contacts />}></Route>
         <Route path='/about' element={<About />}></Route>
-        <Route path='/direction:' element={<Directions/>}></Route>
-        <Route path='/product' element={<Product/>}></Route>
-        <Route path='/glossary' element={<Dictionary/>}></Route>
-        <Route path='/search' element={<Search/>}></Route>
-        
+        <Route path='/product' element={<Product />}></Route>
+        <Route path='/glossary' element={<Dictionary />}></Route>
+        <Route path='/search' element={<Search />}></Route>
+
 
       </Routes>
     </div>

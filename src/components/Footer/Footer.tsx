@@ -9,7 +9,7 @@ import getCategories from "../../api/getCategories/getCategories";
 
 const Footer = () => {
     const [menu, setMenu] = useState<any[]>([]);
-    
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -25,7 +25,7 @@ const Footer = () => {
 
 
 
-    console.log(menu)
+    // console.log(menu)
     if (!!menu.length) {
 
         return (
@@ -37,13 +37,11 @@ const Footer = () => {
                                 {
                                     menu.map((item) => (
                                         <div className={style.col_content}>
-                                            <a className={style.directions}>{item.attributes.name}</a>
+                                            <a href={`/${item.id}`} className={style.directions}>{item.attributes.name}</a>
                                             <div className={style.menu_content}>
                                                 {
                                                     item.attributes.product_categories.data.map((cat: any) => (
-
-                                                        <a className={style.items}>{cat.attributes.name}</a>
-                                                        // <></>
+                                                        <a href={`/${item.id}/${cat.id}`} className={style.items}>{cat.attributes.name}</a>
                                                     ))
                                                 }
                                             </div>
