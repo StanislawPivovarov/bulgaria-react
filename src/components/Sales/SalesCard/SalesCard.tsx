@@ -13,7 +13,7 @@ const SalesCard = () => {
             <div className={style.content}>
             <h2 className={style.name}>Открытки от 2 ₽</h2>
             <p className={style.description}>Изготовление открыток к любому празднику быстро и оперативно</p>
-            <Button className={style.button} type="primary">Заказать</Button>
+            <Button href="#callbackwidget" className={style.button} type="primary">Заказать</Button>
             </div>
 
 

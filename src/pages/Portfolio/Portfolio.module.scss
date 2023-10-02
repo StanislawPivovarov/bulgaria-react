@@ -71,7 +71,6 @@
 .all_left {
     display: grid;
     grid-template-columns: 50% 50% ;
-    top: -4px;
     position: relative;
     @media (min-width: 992px) {
         grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7% ;
@@ -82,4 +81,6 @@
     width:fit-content;
     overflow: hidden;
     height: 100%;
+    padding: 0;
+    border: 0;
 }

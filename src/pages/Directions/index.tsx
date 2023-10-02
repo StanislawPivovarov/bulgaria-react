@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import style from './Dicrections.module.scss'
 import back from '../../assets/background/427d5d07b90ff63bded756568f027851.png'
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 import cover from '../../assets/directions/Frame 34189.png'
 import tech from '../../assets/directions/Frame-Е.png'
 import PrimaryHeader from "../../components/PrimaryHeader";
@@ -71,11 +71,17 @@ const Directions = () => {
                         <div className={style.products}>
 
                             {
-                                data?.product_categories?.data.map((item: { attributes: { name: any; description: any }; }): any => (
-                                    <ProductCard
-                                        name={item?.attributes?.name}
-                                        description={item?.attributes?.description}
-                                    />
+                                data?.product_categories?.data.map((item: {
+                                    id: | null | undefined; attributes: { name: any; description: any };
+                                }): any => (
+                                    <a className={style.button_to} href={`/${id}/${item.id}`}>
+
+                                        <ProductCard
+                                            name={item?.attributes?.name}
+                                            description={item?.attributes?.description}
+                                        />
+                                    </a>
+
                                 ))
                             }
 

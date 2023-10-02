@@ -13,6 +13,7 @@ import { useParams } from "react-router-dom";
 import getCategoriesByLink from "../../api/getGategoriesByLink/getGategoriesByLink";
 import getProductsByLink from "../../api/getProductsByLink/getProductsByLink";
 import Markdown from "react-markdown";
+import Advantages from "../../components/Advantages";
 
 
 const Product = () => {
@@ -87,15 +88,10 @@ const Product = () => {
 
                                 </div>
 
-                                <div className={style.all_left}>
-                                    <img src={image} className={style.img_big} alt="" />
-                                    <img src={image} className={style.img_big} alt="" />
-                                    <img src={image} className={style.img_big} alt="" />
-                                </div>
                             </div>
 
                             <PrimaryHeader className={style.blue_header} header="Преимущества" />
-                            <h2>Добавить преимущества и сделать вертску для них</h2>
+                            <Advantages/>
                             <PrimaryHeader className={style.blue_header} header="Особенности производства" />
                             <div className={style.video_content}>
                                 <div className={style.player}>
@@ -137,7 +133,7 @@ const Product = () => {
                                     Заинтересовала наша продукция? Оставьте заявку
                                     и мы с вами свяжемся.
                                 </p>
-                                <Button type="primary">Заказать звонок</Button>
+                                <Button href="#callbackwidget" type="primary">Заказать звонок</Button>
                             </div>
 
                             {/* <h2 className={style.recommendations}>Возможно вас заинтересует</h2>

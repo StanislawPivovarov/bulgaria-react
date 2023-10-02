@@ -37,7 +37,6 @@ function App() {
         <Route path='/glossary' element={<Dictionary />}></Route>
         <Route path='/search' element={<Search />}></Route>
 
-
       </Routes>
     </div>
   );

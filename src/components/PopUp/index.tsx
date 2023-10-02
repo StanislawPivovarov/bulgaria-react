@@ -19,13 +19,13 @@ const PopUp = (props:any) => {
         <div>
             
             <Modal centered className={style.popup} footer={false} open={props.open} onOk={props.onOk} closable={close} onCancel={props.onCancel}>
-                <img src={test} className={style.image} alt="" />
+                <img src={props.image} className={style.image} alt="" />
                 <div className={style.popup_content}>
-                    <h1>Профессиональное создание каталога для TopShues</h1>
-                    <p className={style.description}>Мы представляем полный цикл создания каталогов для обувного магазина. Мы работали тесно с клиентом, выбрали оптимальную бумагу, распечатали каталоги и сделали контроль качества. Мы гарантируем максимальное качество нашей работы и готовы представлять продукцию магазина на высоком уровне.</p>
+                    <h1>{props.header}</h1>
+                    <p className={style.description}>{props.description}</p>
                     <div className={style.link}>
                         <p>Товар:</p>
-                        <Button type="default">Буклеты и брошюры</Button>
+                        <Button href={`/${props.category_id}/${props.product_category_id}`} type="default">{props.category}</Button>
                     </div>
                 </div>
             </Modal>

@@ -10,6 +10,7 @@ const Layout = ({children}: any) => {
         <>
         <Header/>
         <Menu/>
+        <a href="#showchat" data-message="Хочу сделать заказ"></a>
         {children}
         <FloatButton.BackTop className={style.float_button} icon={<UpOutlined className={style.float_button_icon}/>}/>
 

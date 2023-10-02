@@ -24,7 +24,10 @@ const Header = () => {
                 <Col xs={22} lg={20}>
                     <div className={style.header_content}>
                         <div className={style.logo_content}>
+                            <Button className={style.logo} href="/" type="link">
                             <img className={style.logo} src={logo} alt="logo" />
+                            </Button>
+ 
                             <Button type="link" onClick={showDrawer} className={style.menu_button}><MenuOutlined style={{ fontSize: 20 }} /></Button>
                         </div>
 
@@ -55,33 +58,19 @@ const Header = () => {
             </Row>
             <Drawer title="Меню" height={"100vh"} placement="top" onClose={onClose} open={open}>
                 <div className={style.drawer_content}>
-                    <Button type="link">Поиск</Button>
+                    <Button href="/search" type="link">Поиск</Button>
                     <Divider style={{ background: "transparent", margin: "8px 0" }} />
-                    <Button type="link">Акции</Button>
-                    <Button type="link">Портфолио</Button>
-                    <Button type="link">Отзывы</Button>
-                    <Button type="link">О нас</Button>
-                    <Button type="link">Контакты</Button>
-                    <Button type="link">Словарь</Button>
+                    <Button href="/sales" type="link">Акции</Button>
+                    <Button href="/portfolio" type="link">Портфолио</Button>
+                    <Button href="/reviews" type="link">Отзывы</Button>
+                    <Button href="/about" type="link">О нас</Button>
+                    <Button href="/contacts" type="link">Контакты</Button>
+                    <Button href="/glossary"type="link">Словарь</Button>
                     <Divider style={{ background: "transparent", margin: "8px 0" }} />
-                    <Button type="link">Печати и штампы</Button>
-                    <Button type="link">Полиграфия</Button>
-                    <Button type="link">Собственное производство</Button>
-                </div>
-
-            </Drawer>
-
-            <Drawer title="Basic Drawer" height={"100vh"} placement="top" onClose={onClose}>
-                <div className={style.drawer_content}>
-                    <Button type="link">Some contents...</Button>
-                    <Button type="link">Some contents...</Button>
-                    <Button type="link">Some contents...</Button>
-                    <Button type="link">Some contents...</Button>
-                    <Button type="link">Some contents...</Button>
-                    <Button type="link">Some contents...</Button>
-                    <Button type="link">Some contents...</Button>
-                    <Button type="link">Some contents...</Button>
-                    <Button type="link">Some contents...</Button>
+                    <Button href="/1" type="link">Печати и штампы</Button>
+                    <Button href="/2" type="link">Лазерная гравировка</Button>
+                    <Button href="/3"type="link">Полиграфия</Button>
+                    <Button href="/4" type="link">Собственное производство</Button>
                 </div>
 
             </Drawer>

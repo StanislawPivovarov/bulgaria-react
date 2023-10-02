@@ -25,7 +25,7 @@ const Sales = () => {
                                             <Label class={style.label} />
                                         <div className={style.button_description}>
                                         <p className={style.description}>Двухсторонняя цветная печать на плотной мелованной бумаге</p>
-                                        <Button className={style.order_btn} type="primary">Заказать <RightOutlined className={style.btn_logo}/></Button>
+                                        <Button href="#callbackwidget" className={style.order_btn} type="primary">Заказать <RightOutlined className={style.btn_logo}/></Button>
                                         </div>
                                        
                                     </div>
@@ -33,7 +33,7 @@ const Sales = () => {
                                 </div>
                                 <div className={style.button_group}>
                                
-                                <Button className={style.more_sales} type="default">Все акции <RightOutlined className={style.more_sales_logo}/></Button>
+                                <Button href="/sales" className={style.more_sales} type="default">Все акции <RightOutlined className={style.more_sales_logo}/></Button>
 
                                 </div>
                              
